@@ -1,8 +1,11 @@
 # config.py
 import os.path
+from pathlib import Path
+
+ProjectRoot = Path(__file__).resolve().parent.parent
 
 # gets home dir cross platform
-HOME = os.path.expanduser("~")
+HOME = str(ProjectRoot)
 
 # for making bounding boxes pretty
 COLORS = ((255, 0, 0, 128), (0, 255, 0, 128), (0, 0, 255, 128),

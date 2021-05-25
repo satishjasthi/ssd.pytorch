@@ -1,0 +1,22 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[[source]]
+name = "pytorch"
+url = "https://download.pytorch.org/whl/cpu/torch_stable.html"
+verify_ssl = false
+
+[packages]
+torch = {version = "==1.2.0", index = "pytorch"}
+torchvision = {version = "==0.4.0", index = "pytorch"}
+
+Pillow = "*"
+opencv-python = "*"
+
+[dev-packages]
+pylint = "*"
+
+[requires]
+python_version = "3.7"
